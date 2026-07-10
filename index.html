@@ -3,181 +3,296 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IronMatrix Gym | Premium Fitness Club by Vicky Arya</title>
-    <!-- Font Awesome Icons for Socials and Elements -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+    <title>IronMatrix Gym | Imamganj, Gaya, Bihar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="Style.css">
 </head>
 <body>
 
-    <!-- 🔥 Floating WhatsApp Button -->
-    <a href="https://wa.me!" class="floating-whatsapp" target="_blank" aria-label="Join on WhatsApp">
-        <i class="fab fa-whatsapp"></i>
-    </a>
+    <button id="backToTop" class="back-to-top"><i class="fas fa-arrow-up"></i></button>
 
-    <!-- Header Navigation & 🎨 Unique Logo -->
-    <header>
-        <div class="logo">
-            <i class="fas fa-cubes logo-icon"></i> IRON<span>MATRIX</span>
-        </div>
-        <nav>
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#services">Services</a>
-            <a href="#plans">Plans</a>
-            <a href="#trainers">Trainers</a>
-            <a href="#gallery">Gallery</a>
-            <a href="#contact">Contact</a>
-        </nav>
-        <div class="header-ctas">
-            <a href="tel:+916287255203" class="cta-call"><i class="fas fa-phone"></i> Call Now</a>
-        </div>
-    </header>
+    <div class="floating-buttons">
+        <a href="https://wa.me/916287255203" class="float-btn whatsapp" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        <a href="tel:+916287255203" class="float-btn call"><i class="fas fa-phone-alt"></i></a>
+    </div>
 
-    <!-- 🏠 Premium Home Page (Hero Section) -->
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <h1 class="animate-text">WELCOME TO THE <span>MATRIX</span></h1>
-            <p class="animate-text delay-1">Where Iron Meets Ultimate Luxury & Transformation.</p>
-            <div class="hero-buttons animate-text delay-2">
-                <a href="#plans" class="btn-gold">View Packages</a>
-                <a href="https://wa.me!" target="_blank" class="btn-whatsapp"><i class="fab fa-whatsapp"></i> Join on WhatsApp</a>
+    <header class="header">
+    <div class="container nav-container">
+        <!-- यहाँ ये बटन जोड़ो -->
+        <button class="menu-toggle" style="background: none; border: none; color: #fff; font-size: 1.5rem; cursor: pointer;">
+    ☰
+</button>
+
+        <!-- तुम्हारा बाकी का मेन्यू यहाँ होगा -->
+        <nav class="nav-menu">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#plans">Plans</a>
+</nav>
+
+    </div>
+</header>
+
+
+    <section id="home" class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="hero-content text-center container">
+            <h1 class="reveal">WELCOME TO IRONMATRIX GYM</h1>
+            <p class="reveal">इमामगंज की शान, बिहार की धड़कन, गया का गर्व! यहाँ सपने नहीं, नतीजे दिखते हैं।</p>
+            <div class="hero-buttons reveal">
+                <a href="#register" class="btn btn-primary">Join Today</a>
+                <a href="#plans" class="btn btn-outline">View Plans</a>
             </div>
         </div>
     </section>
 
-    <!-- 💪 About IronMatrix Gym -->
-    <section id="about" class="about section-padding">
-        <div class="container">
-            <h2 class="section-title">ABOUT <span>IRONMATRIX</span></h2>
-            <div class="about-grid">
-                <!-- 📸 आपकी असली फोटो सीधे फेसबुक/इंटरनेट लिंक से लोड होगी -->
-                <div class="about-image" style="background-image: url('https://fbcdn.net'); background-size: cover; background-position: center; height: 350px; border-radius: 8px; border: 2px solid #d4af37;"></div>
-                <div class="about-text">
-                    <h3>The Ultimate Fitness Sanctuary</h3>
-                    <p>IronMatrix Gym सिर्फ एक वर्कआउट स्पेस नहीं है, यह **Vicky Arya** द्वारा स्थापित एक premium transformation hub है। यहाँ हम अत्याधुनिक इंफ्रास्ट्रक्चर, वर्ल्ड-क्लास इक्विपमेंट्स और सर्टिफाइड ट्रेनर्स के साथ आपको एक लक्ज़री और High-Energy माहौल देते हैं।</p>
-                    <p>हमारा मिशन आपकी शारीरिक क्षमताओं को मैट्रिक्स की तरह असीमित और बेहद मजबूत बनाना है। आज ही हमारे साथ जुड़ें और बदलाव महसूस करें।</p>
-                </div>
+    <section id="about" class="about-section section-padding">
+        <div class="container grid-2">
+            <div class="about-img reveal">
+                <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=800&q=80" alt="Gym Interior">
             </div>
-            <div class="about-stats" style="margin-top: 40px;">
-                <div class="stat-box"><h4>5000+</h4><p>Happy Members</p></div>
-                <div class="stat-box"><h4>15+</h4><p>Certified Trainers</p></div>
-                <div class="stat-box"><h4>24/7</h4><p>Premium Support</p></div>
+            <div class="about-info reveal">
+                <h2 class="section-title">ABOUT IRONMATRIX GYM</h2>
+                <div class="line"></div>
+                <p>IronMatrix Gym is the ultimate premium fitness destination in Imamganj, Gaya. Powered by discipline, heavy iron, and absolute determination, we provide the best atmosphere for building powerhouses.</p>
+                <p>Discipline ka level high rehta hai, aur har banda yahan apni taqat ko jagata hai. Come push your limits with the finest machinery and expert guidance.</p>
             </div>
         </div>
     </section>
 
-    <!-- 🏋️ Services -->
-    <section id="services" class="services section-padding">
+    <section id="services" class="services-section section-padding bg-darker">
         <div class="container">
-            <h2 class="section-title">OUR <span>SERVICES</span></h2>
-            <div class="grid-3">
+            <h2 class="section-title text-center reveal">OUR SERVICES</h2>
+            <div class="line center"></div>
+            <div class="grid-3 reveal">
                 <div class="card service-card">
-                    <i class="fas fa-dumbbell card-icon"></i>
-                    <h3>Strength Training</h3>
-                    <p>प्रीमियम हैवी-ड्यूटी प्लेट्स और बारबेल्स के साथ अपनी मसल्स और पावर को नेक्स्ट लेवल पर ले जाएं।</p>
+                    <i class="fas fa-dumbbell"></i>
+                    <h3>Bodybuilding</h3>
+                    <p>Heavy iron duty, dedicated free-weight zones, and cutting-edge machines for maximum gains.</p>
                 </div>
                 <div class="card service-card">
-                    <i class="fas fa-heartbeat card-icon"></i>
-                    <h3>Cardio Matrix</h3>
-                    <p>हाई-टेक ट्रेडमिल्स, अण्डाकार और रोइंग मशीनों के साथ अपने स्टैमिना को बूस्ट करें।</p>
+                    <i class="fas fa-heartbeat"></i>
+                    <h3>Cardio & Endurance</h3>
+                    <p>High-intensity modern treadmills and custom circuits to shred fat and build unstoppable stamina.</p>
                 </div>
                 <div class="card service-card">
-                    <i class="fas fa-apple-alt card-icon"></i>
-                    <h3>Diet & Nutrition</h3>
-                    <p>हमारे एक्सपर्ट्स द्वारा तैयार किया गया कस्टमाइज्ड डाइट प्लान जो आपके गोल्स को तेज़ी से पूरा करे।</p>
+                    <i class="fas fa-user-shield"></i>
+                    <h3>Personal Coaching</h3>
+                    <p>Direct premium mentorship, personalized nutrition blueprints, and absolute accountability.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- 💰 Membership Plans -->
-    <section id="plans" class="plans section-padding">
+    <section id="plans" class="plans-section section-padding">
         <div class="container">
-            <h2 class="section-title">MEMBERSHIP <span>PLANS</span></h2>
-            <div class="grid-3">
+            <h2 class="section-title text-center reveal">MEMBERSHIP PLANS</h2>
+            <div class="line center"></div>
+            <div class="grid-3 reveal">
                 <div class="card plan-card">
-                    <h3>Silver Matrix</h3>
-                    <div class="price">₹1,999<span>/Month</span></div>
+                    <h3>1 MONTH</h3>
+                    <div class="price">₹500<span>/mo</span></div>
                     <ul>
-                        <li><i class="fas fa-check text-gold"></i> Access to Gym Floor</li>
-                        <li><i class="fas fa-check text-gold"></i> General Trainer Guidance</li>
-                        <li><i class="fas fa-check text-gold"></i> Locker Facility</li>
+                        <li><i class="fas fa-check"></i> Gym Floor Access</li>
+                        <li><i class="fas fa-check"></i> General Guidance</li>
+                        <li><i class="fas fa-check"></i> Locker Room Access</li>
                     </ul>
-                    <a href="#contact" class="btn-gold-outline">Select Plan</a>
+                    <a href="#register" class="btn btn-primary block-btn">Select Plan</a>
                 </div>
-                <div class="card plan-card featured">
-                    <div class="badge">MOST POPULAR</div>
-                    <h3>Gold Matrix</h3>
-                    <div class="price">₹4,999<span>/3 Months</span></div>
+                <div class="card plan-card popular">
+                    <div class="badge">POPULAR</div>
+                    <h3>3 MONTHS</h3>
+                    <div class="price">₹1300<span>/pack</span></div>
                     <ul>
-                        <li><i class="fas fa-check text-gold"></i> All Silver Access</li>
-                        <li><i class="fas fa-check text-gold"></i> Personalized Diet Plan</li>
-                        <li><i class="fas fa-check text-gold"></i> 2 Body Composition Analysis</li>
+                        <li><i class="fas fa-check"></i> Full Access All Hours</li>
+                        <li><i class="fas fa-check"></i> Customized Workout Chart</li>
+                        <li><i class="fas fa-check"></i> Cardio Floor Included</li>
                     </ul>
-                    <a href="#contact" class="btn-gold">Select Plan</a>
+                    <a href="#register" class="btn btn-secondary block-btn">Select Plan</a>
                 </div>
                 <div class="card plan-card">
-                    <h3>Platinum Matrix</h3>
-                    <div class="price">₹14,999<span>/Year</span></div>
+                    <h3>6 MONTHS</h3>
+                    <div class="price">₹2400<span>/pack</span></div>
                     <ul>
-                        <li><i class="fas fa-check text-gold"></i> Full 1 Year Access</li>
-                        <li><i class="fas fa-check text-gold"></i> Free Personal Trainer (1 Month)</li>
-                        <li><i class="fas fa-check text-gold"></i> VIP Lounge Access</li>
+                        <li><i class="fas fa-check"></i> Full Premium Membership</li>
+                        <li><i class="fas fa-check"></i> Diet Consultation Link</li>
+                        <li><i class="fas fa-check"></i> 1-on-1 Strategy Session</li>
                     </ul>
-                    <a href="#contact" class="btn-gold-outline">Select Plan</a>
+                    <a href="#register" class="btn btn-primary block-btn">Select Plan</a>
                 </div>
             </div>
         </div>
     </section>
-
-    <!-- 👨‍🏫 Trainers Section -->
-    <section id="trainers" class="trainers section-padding">
-        <div class="container">
-            <h2 class="section-title">EXPERT <span>TRAINERS</span></h2>
-            <div class="grid-3">
-                <!-- 📸 यहाँ ओनर/हेड कोच में आपकी फोटो दिखेगी -->
-                <div class="card trainer-card">
-                    <div class="trainer-img" style="background-image: url('https://fbcdn.net')"></div>
+    <section id="trainers" class="trainers-section section-padding bg-darker">
+    <div class="container">
+        <h2 class="section-title text-center reveal">OUR EXPERT TEAM</h2>
+        <div class="line center"></div>
+        
+        <div class="grid-2 reveal max-w-800">
+            <!-- Trainer 1: Vicky Arya -->
+            <div class="card trainer-card">
+                <div class="trainer-img">
+                    <img src="vicky.jpg" alt="Vicky Arya">
+                </div>
+                <div class="trainer-info">
                     <h3>Vicky Arya</h3>
-                    <p>Founder & Head Strength Coach</p>
+                    <span class="role">HEAD COACH & MENTOR (OWNER)</span>
+                    <p>"Discipline guarantees results. IronMatrix is where you push past your limits and achieve greatness."</p>
                 </div>
-                <div class="card trainer-card">
-                    <div class="trainer-img" style="background-image: url('https://unsplash.com')"></div>
-                    <h3>Ananya Sharma</h3>
-                    <p>Cardio & HIIT Expert</p>
+            </div>
+
+            <!-- Trainer 2: Rahul Singh -->
+            <div class="card trainer-card">
+                <div class="trainer-img">
+                    <img src="https://images.unsplash.com/photo-1567013127542-490d757e51fc?auto=format&fit=crop&w=500&q=80" alt="Rahul Singh">
+
                 </div>
-                <div class="card trainer-card">
-                    <div class="trainer-img" style="background-image: url('https://unsplash.com')"></div>
-                    <h3>Kabir Singh</h3>
-                    <p>Nutrition & Transformation Coach</p>
+                <div class="trainer-info">
+                    <h3>Rahul Singh</h3>
+                    <span class="role">CERTIFIED FITNESS TRAINER</span>
+                    <p>"Hard work is our daily routine. Every single heavy repetition brings you closer to your ultimate physique."</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <section id="transformations" class="transform-section section-padding">
+        <div class="container">
+            <h2 class="section-title text-center reveal">REAL EVOLUTIONS</h2>
+            <div class="line center"></div>
+            <p class="text-center subtitle reveal">See the real transformation results from our dedicated members.</p>
+            <div class="transform-grid reveal max-w-600">
+                <div class="transform-card">
+                    <div class="image-split">
+                        <div class="split-side">
+                            <img src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=400&q=80" alt="Before">
+                            <span class="tag before">BEFORE</span>
+                        </div>
+                        <div class="split-side">
+                            <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?auto=format&fit=crop&w=400&q=80" alt="After">
+                            <span class="tag after">AFTER</span>
+                        </div>
+                    </div>
+                    <div class="transform-info text-center">
+                        <h3>Amit Kumar</h3>
+                        <p class="role">Shredded 18kg in 5 Months</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- 🖼️ Gallery Section -->
-    <section id="gallery" class="gallery section-padding">
+    <section id="gallery" class="gallery-section section-padding bg-darker">
         <div class="container">
-            <h2 class="section-title">THE <span>GALLERY</span></h2>
-            <div class="gallery-grid">
-                <div class="gallery-item" style="background-image: url('https://unsplash.com')"></div>
-                <div class="gallery-item" style="background-image: url('https://unsplash.com')"></div>
-                <div class="gallery-item" style="background-image: url('https://unsplash.com')"></div>
-                <div class="gallery-item" style="background-image: url('https://unsplash.com')"></div>
+            <h2 class="section-title text-center reveal">IRONMATRIX GALLERY</h2>
+            <div class="line center"></div>
+            <div class="grid-3 reveal">
+                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?auto=format&fit=crop&w=500&q=80" alt="Gym 1"></div>
+                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=500&q=80" alt="Gym 2"></div>
+                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?auto=format&fit=crop&w=500&q=80" alt="Gym 3"></div>
             </div>
         </div>
     </section>
 
-    <!-- ⭐ Client Reviews -->
-    <section id="reviews" class="reviews section-padding">
+    <section id="reviews" class="reviews-section section-padding">
         <div class="container">
-            <h2 class="section-title">CLIENT <span>REVIEWS</span></h2>
-            <div class="grid-3">
+            <h2 class="section-title text-center reveal">AUDIENCE REVIEWS</h2>
+            <div class="line center"></div>
+            <div class="grid-2 reveal max-w-800">
                 <div class="card review-card">
-                    <div class="stars">★★★★★</div>
-                    <p>"यहाँ का माहौल और मशीनें वाकई प्रीमियम क्लास की हैं। गोल्ड थीम जिम को बहुत ही लग्जरी फील देती है।"</p>
-                    <h4>- राहुल वर्मा</h4>
+                    <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <p>"इमामगंज का सबसे बेस्ट जिम है! विक्की भाई का मोटिवेशन और मशीनरी दोनों नंबर वन हैं।"</p>
+                    <h4>- Sunny Raj</h4>
                 </div>
                 <div class="card review-card">
-                    <div class="stars">★★★
+                    <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <p>"The discipline here completely changed my routine. The environment is pure intense workout energy!"</p>
+                    <h4>- Ranjan Yadav</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="bmi" class="bmi-section section-padding bg-darker">
+        <div class="container max-w-500 reveal">
+            <h2 class="section-title text-center">BMI CALCULATOR</h2>
+            <div class="line center"></div>
+            <div class="card bmi-card">
+                <div class="form-group">
+                    <label>Weight (kg)</label>
+                    <input type="number" id="bmiWeight" placeholder="e.g. 65">
+                </div>
+                <div class="form-group">
+                    <label>Height (cm)</label>
+                    <input type="number" id="bmiHeight" placeholder="e.g. 165">
+                </div>
+                <button onclick="calculateBMI()" class="btn btn-secondary block-btn">Calculate Your BMI</button>
+                <div id="bmiResult" class="bmi-result"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="register" class="register-section section-padding">
+        <div class="container max-w-500 reveal">
+            <h2 class="section-title text-center">NEW REGISTRATION</h2>
+            <div class="line center"></div>
+            <div class="card register-card">
+                <form id="reg-form">
+                    <div class="form-group">
+                        <label>Full Name</label>
+                        <input type="text" id="reg-name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Phone Number</label>
+                        <input type="tel" id="reg-phone" placeholder="Your Phone Number" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Select Membership Plan</label>
+                        <select id="reg-plan">
+                            <option value="1 Month">1 Month Plan (₹500)</option>
+                            <option value="3 Months">3 Months Plan (₹1300)</option>
+                            <option value="6 Months">6 Months Plan (₹2400)</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary block-btn">Submit Registration</button>
+                </form>
+                <div id="form-success" class="alert alert-success">Registration Submitted Successfully!</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section section-padding bg-darker">
+        <div class="container grid-2">
+            <div class="contact-info reveal">
+                <h2 class="section-title">CONTACT INFORMATION</h2>
+                <div class="line"></div>
+                <div class="info-items">
+                    <p><i class="fas fa-map-marker-alt"></i> Imamganj, Gaya, Bihar</p>
+                    <p><i class="fas fa-phone-alt"></i> <a href="tel:+916287255203">6287255203</a></p>
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:vickyarya913@gmail.com">vickyarya913@gmail.com</a></p>
+                </div>
+                <div class="timing-box">
+                    <h3><i class="far fa-clock"></i> Gym Timings</h3>
+                    <p>Morning: 05:00 AM - 09:30 AM</p>
+                    <p>Evening: 04:00 PM - 09:00 PM</p>
+                    <p class="text-yellow">Sunday Closed</p>
+                </div>
+                <div class="social-links">
+                    <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                </div>
+            </div>
+            <div class="map-container reveal">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14483.921356073104!2d84.5992982!3d24.4861614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x398b253b8bbfb261%3A0xcad07127bcfb9fc3!2sImamganj%2C%20Bihar!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2026 IronMatrix Gym. All Rights Reserved. | Crafted for Iron Warriors.</p>
+    </footer>
+
+    <script src="Script.js"></script>
+</body>
+</html>
